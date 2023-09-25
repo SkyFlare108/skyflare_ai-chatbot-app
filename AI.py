@@ -1,18 +1,27 @@
+import os
 from pathlib import Path
 
-print("Welcome to SkyFlare Bot. This test project will attempt to answer your questions and store answers specific to your conditions.");
-name = input("What is your name");
+current_directory = os.path.dirname(os.path.abspath(__file__))
 
-file_name = Path("/Users/skyflare108/Desktop/AI Proj/{name}.txt");
+print("\n*Welcome to SkyFlare ChatApp*\n")
+user = input("Account Username: ")
 
-if file_name.is_file():
-    print("We were able to access your file");
+file_name = "{}.txt".format(user)
+file_path = os.path.join(current_directory, file_name)
+
+if os.path.exists(file_path):
+    with open(file_name, "a") as file:
+        print("Account Exists")
+        first_line = next(open("{}.txt".format(user)))
+        passWord = input("Account Password: ")
+        
+        # while passWord != first_line:
+        #     passWord = input("Try Again: ")
+
+        print(">>>Welcome to your Data<<<")
 else:
-    print("We were not able to access your file");
-    # file = open("{name}.txt", "a")
-    # file.write("Now the file has more content!")
-    # file.close()
-
-# f = open("{name}.txt", "r")
-# print(f.read())
+    with open(file_path, "w") as file:
+        print("Account Doesn't exist\nCreating...")
+        passWord = input("Create account Password: ")
+        file.write("{}\n".format(passWord))
 
