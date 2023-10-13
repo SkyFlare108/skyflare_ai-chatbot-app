@@ -1,7 +1,7 @@
 import os
 import spacy
 
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_lg")
 from pathlib import Path
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
