@@ -71,7 +71,7 @@ def chatbot(file_path):
             print(f"Chatbot: {qa_dict[user_question]}")
         else:
             most_similar_question, similarity = get_most_similar_question(user_question, qa_dict)
-            if similarity > 0.7:  # You can adjust this threshold as needed
+            if similarity > 0.2:  # Increase the threshold for specificity of answer retreival 
                 print(f"Chatbot: Did you mean '{most_similar_question}'? {qa_dict[most_similar_question]}")
             else:
                 print("Chatbot: I don't know the answer to that. Please tell me.")
