@@ -71,8 +71,18 @@ def chatbot(file_path):
             print(f"Chatbot: {qa_dict[user_question]}")
         else:
             most_similar_question, similarity = get_most_similar_question(user_question, qa_dict)
-            if similarity > 0.2:  # Increase the threshold for specificity of answer retreival 
+            if similarity > 0.3:  # Increase the threshold for specificity of answer retreival 
                 print(f"Chatbot: Did you mean '{most_similar_question}'? {qa_dict[most_similar_question]}")
+                questionCheck = input("Y/N: ")
+                if questionCheck == "N":
+                    print("Chatbot: I don't know the answer to that. Please tell me.")
+                    new_answer = input("You (provide the answer): ")
+                    qa_dict[user_question] = new_answer
+                    save_question_and_answer(file_path, user_question, new_answer)
+                    print("Chatbot: Thanks, I've learned something new!")
+                if questionCheck == "Y":
+                    print(f"Chatbot: {qa_dict[most_similar_question]}")
+                    continue
             else:
                 print("Chatbot: I don't know the answer to that. Please tell me.")
                 new_answer = input("You (provide the answer): ")
@@ -83,4 +93,3 @@ def chatbot(file_path):
 if __name__ == "__main__":
     print("Chatbot: Hello! You can ask me anything. Type 'exit' to end the conversation.")
     chatbot(file_name)
-
