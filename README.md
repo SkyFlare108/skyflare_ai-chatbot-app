@@ -43,6 +43,6 @@ python ./AI.py
 - Using python3 classify the chatbot
 - starlit interface?
 - Add conversational interface using huggingface libraries.
-  -Ability to save output from conversational model to file.
+- Ability to save output from conversational model to file.
 - Additional Model Management (default is spacy `en-core-web-lg`)
 
