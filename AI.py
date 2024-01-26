@@ -9,8 +9,9 @@ print("\n*Welcome to Your ChatApp*\n")
 user = input("Account Username: ")
 check = True
 programCheck = True
+user_path = "userfiles"
 file_name = "{}.txt".format(user)
-file_path = os.path.join(current_directory, file_name)
+file_path = os.path.join(current_directory, user_path, file_name)
 
 if os.path.exists(file_path):
     with open(file_name, "a") as file:
