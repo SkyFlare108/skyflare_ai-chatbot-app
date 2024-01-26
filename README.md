@@ -45,5 +45,3 @@ python ./AI.py
 - Additional Model Management (default is spacy `en-core-web-lg`)
 
 =======
-An Artificial Intelligence ChatBot Python project which parses standard user input, persistently store data in a text file knowledge base and implement case and type sensitivity handling to enhance output accuracy. A user-centric knowledge base system was implemented, enabling each user to tailor their own personalized knowledge repositories for specialized query responses and chatbot training.
-
