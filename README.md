@@ -1,8 +1,6 @@
 # Project Description
-I am working on a simple Python Artificially Intelligent ChatBot project to take standard user input from the user, store it to a "knowledge base" (in this project a txt file), and ensure no case or type sensitive issues cause faulty output results from it. Additionally each user can create their oen personalized knowledge base to access answers to questions pertaining to them, along with training their chatbot to their liking.
 
-
-# Added on fauxtrot fork:
+An Artificial Intelligence ChatBot Python project which parses standard user input, persistently store data in a text file knowledge base and implement case and type sensitivity handling to enhance output accuracy. A user-centric knowledge base system was implemented, enabling each user to tailor their own personalized knowledge repositories for specialized query responses and chatbot training.
 
 ## Installation: 
 
@@ -45,4 +43,7 @@ python ./AI.py
 - Add conversational interface using huggingface libraries.
 - Ability to save output from conversational model to file.
 - Additional Model Management (default is spacy `en-core-web-lg`)
+
+=======
+An Artificial Intelligence ChatBot Python project which parses standard user input, persistently store data in a text file knowledge base and implement case and type sensitivity handling to enhance output accuracy. A user-centric knowledge base system was implemented, enabling each user to tailor their own personalized knowledge repositories for specialized query responses and chatbot training.
 
