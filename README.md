@@ -23,7 +23,7 @@ conda env create -f=env.yml
 setup.bat
 ```
 
--linux
+- Linux
 ```bash
 ./setup.sh
 ```
@@ -43,5 +43,3 @@ python ./AI.py
 - Add conversational interface using huggingface libraries.
 - Ability to save output from conversational model to file.
 - Additional Model Management (default is spacy `en-core-web-lg`)
-
-=======
