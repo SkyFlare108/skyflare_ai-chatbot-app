@@ -1,1 +1,1 @@
-conda env update --file local.yml --prune
+conda env update --file env.yml --prune
