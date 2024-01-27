@@ -41,7 +41,6 @@ if __name__ == "__main__":
             first_lineCheck = file.readline(5_000_000)
             while check:
                 passWord = input("Account Password: ")
-                first_line = next(open("{}.txt".format(user)))
                 if first_lineCheck.strip() == passWord.strip():
                     print(">>>Welcome to your Data<<<")
                     check = False
