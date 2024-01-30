@@ -19,7 +19,9 @@ if os.path.exists(file_path):
             first_lineCheck = file.readline(5_000_000)
             while check:
                 passWord = input("Account Password: ")
-                first_line = next(open("{}.txt".format(user)))
+                # not sure what's going on here, but recommending removal until 
+                # it's understood what we're trying to do here.
+                #first_line = next(open("{}.txt".format(user)))
                 if first_lineCheck.strip() == passWord.strip():
                     print(">>>Welcome to your Data<<<")
                     check = False
