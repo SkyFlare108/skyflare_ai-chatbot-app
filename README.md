@@ -27,4 +27,4 @@ Once installation is complete if any errors occur with any of those two dependen
 -help
 ```
 
-Will begin UI work using React.js to create a frontend application
+TODO: Frontend application development utilizing React.js
