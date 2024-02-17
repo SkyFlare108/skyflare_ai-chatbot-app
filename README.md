@@ -1,6 +1,6 @@
 # Project Description
 
-An Artificial Intelligence ChatBot Python project which parses standard user input, persistently store data in a text file knowledge base and implement case and type sensitivity handling to enhance output accuracy. A user-centric knowledge base system was implemented, enabling each user to tailor their own personalized knowledge repositories for specialized query responses and chatbot training. Integrating ChatGPT's functionality, a user can choose to accept answers from ChatGPT or can cater responses to their liking.
+An Artificial Intelligence ChatBot Python project which parses standard user input, persistently store data in a text file knowledge base and implement case and type sensitivity handling to enhance output accuracy. A user-centric knowledge base system was implemented, enabling each user to tailor their own personalized knowledge repositories for specialized query responses and chatbot training. With the integrated ChatGPT functionality, a user can choose to accept answers from ChatGPT or can cater responses to their liking.
 
 ## Installation: 
 
