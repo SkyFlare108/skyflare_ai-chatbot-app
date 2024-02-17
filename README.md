@@ -4,42 +4,27 @@ An Artificial Intelligence ChatBot Python project which parses standard user inp
 
 ## Installation: 
 
+**This program requires Python3 to be installed for complete functionality of libraries/apis**
+
+Ensure pip3 is installed
 ```bash
-git clone https://github.com/fauxtrot/SkyFlareAI
+python3 -m ensurepip
 ```
 
-## Conda Environment Management
-
-With a conda environment, you can now get your dependencies:
+Install OpenAI and Spacy through API
 
 ```bash
-conda env create -f=env.yml
+pip3 install openai
 ```
-
-## Ensure that you have the spacey language file
-- Windows
 
 ```bash
-setup.bat
+pip3 install spacy
+python3 -m spacy download en_core_web_sm
 ```
 
-- Linux
+Once installation is complete if any errors occur with any of those two dependencies, make sure to type it into the terminal followed by:
 ```bash
-./setup.sh
+-help
 ```
 
-
-Then start the process:
-```bash
-python ./AI.py
-```
-
-# TODOs
-
-- Add args for loading an initial file.
-- update file security
-- Using python3 classify the chatbot
-- starlit interface?
-- Add conversational interface using huggingface libraries.
-- Ability to save output from conversational model to file.
-- Additional Model Management (default is spacy `en-core-web-lg`)
+Will begin UI work using React.js to create a frontend application
