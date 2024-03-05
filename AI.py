@@ -102,10 +102,10 @@ def chatbot(file_path):
                         )
                         reply = chat.choices[0].message.content 
                         print(f"Chatbot: {reply}") 
-                        print(f"Chatbot: Is the answer you are looking for?")
+                        print("Chatbot: Is the answer you are looking for?")
                         questionVerification = input("Y/N: ")
                         while questionCheck not in {"Y", "N"}:
-                            print(f"Chatbot: Is the answer you are looking for?")
+                            print("Chatbot: Is the answer you are looking for?")
                             questionCheck = input("Y/N: ")
                         if questionVerification == "Y":
                             qa_dict[user_question] = reply
