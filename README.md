@@ -6,13 +6,19 @@ Installation:
 This program requires Python3 to be installed for complete functionality of libraries/apis
 
 Ensure pip3 is installed
-
+```bash
 python3 -m ensurepip
+```
 Install OpenAI and Spacy through API
-
+```bash
 pip3 install openai
+```
+```bash
 pip3 install spacy
+```
+```bash
 python3 -m spacy download en_core_web_sm
+```
 Once installation is complete if any errors occur with any of those two dependencies, make sure to type it into the terminal followed by:
 
 -help
