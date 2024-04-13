@@ -21,7 +21,9 @@ python3 -m spacy download en_core_web_sm
 ```
 Once installation is complete if any errors occur with any of those two dependencies, make sure to type it into the terminal followed by:
 
+```bash
 -help
+```
 
 # SkyFlareAI-Frontend
 The In-Progress React Frontend Application for the SkyFlareAI Chatbot Application
