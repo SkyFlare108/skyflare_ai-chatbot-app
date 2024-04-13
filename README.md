@@ -1,30 +1,11 @@
-# Project Description
+# SkyFlareAI-Frontend
+The In-Progress React Frontend Application for the SkyFlareAI Chatbot Application
 
-An Artificial Intelligence ChatBot Python project which parses standard user input, persistently store data in a text file knowledge base and implement case and type sensitivity handling to enhance output accuracy. A user-centric knowledge base system was implemented, enabling each user to tailor their own personalized knowledge repositories for specialized query responses and chatbot training. With the integrated ChatGPT functionality, a user can choose to accept answers from ChatGPT or can cater responses to their liking.
-
-## Installation: 
-
-**This program requires Python3 to be installed for complete functionality of libraries/apis**
-
-Ensure pip3 is installed
+#Installation
 ```bash
-python3 -m ensurepip
+npm install axios
+```
+```bash
+pip3 install Flask
 ```
 
-Install OpenAI and Spacy through API
-
-```bash
-pip3 install openai
-```
-
-```bash
-pip3 install spacy
-python3 -m spacy download en_core_web_sm
-```
-
-Once installation is complete if any errors occur with any of those two dependencies, make sure to type it into the terminal followed by:
-```bash
--help
-```
-
-TODO: Frontend application development utilizing React.js
