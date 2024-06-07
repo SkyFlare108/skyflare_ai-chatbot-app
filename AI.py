@@ -18,7 +18,7 @@ file_path = os.path.join(current_directory, file_name)
 if os.path.exists(file_path):
     with open(file_name, "a") as file:
         with open(file_path, 'r') as file:
-            first_lineCheck = file.readline()
+            first_lineCheck = file.readline(5_000_000)
             while check:
                 passWord = input("Account Password: ")
                 first_line = next(open("{}.txt".format(user)))
