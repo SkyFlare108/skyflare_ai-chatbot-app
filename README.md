@@ -26,7 +26,7 @@ Once installation is complete if any errors occur with any of those two dependen
 ```
 
 # SkyFlareAI-Frontend
-The In-Progress React Frontend Application for the SkyFlareAI Chatbot Application
+React Frontend Application for the SkyFlareAI Chatbot Application
 
 #Installation
 ```bash
