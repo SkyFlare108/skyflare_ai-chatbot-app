@@ -1,10 +1,12 @@
+from flask import Flask, request, jsonify
 import openai 
 import os
 import spacy
 
-openai.api_key = 'INSERT_YOUR_OPENAI_KEY'
+openai.api_key = 'ENTER_OPENAI_API_KEY'
 messages = [ {"role": "system", "content": "You are a intelligent assistant."} ]
 nlp = spacy.load("en_core_web_lg")
+
 from pathlib import Path
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
